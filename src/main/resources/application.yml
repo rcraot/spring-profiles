@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: spring-profiles
+  main:
+    banner-mode: off
+
+---
+
+spring:
+  profiles: local
+server:
+  host: 10.20.30.40
+  email: local@email.com, developer@email.com, tester@email.com
+
+---
+
+spring:
+  profiles: dev
+server:
+  host: 20.30.40.50
+  email: dev@email.com, developer@email.com, tester@email.com
+
+---
+
+spring:
+  profiles: prod
+server:
+  host: 30.30.40.40
+  email: prod@email.com, developer@email.com, tester@email.com
